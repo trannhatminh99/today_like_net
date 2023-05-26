@@ -1,3 +1,4 @@
 <template>
-  <router-view></router-view>
+  <h1>test</h1>
+<!--  <router-view></router-view>-->
 </template>
