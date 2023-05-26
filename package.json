@@ -1,16 +1,14 @@
 {
   "private": true,
+  "license": "MIT",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "nuxt": "^3.0.0"
+    "dev": "nuxt --port $PORT",
+    "local-dev": "vercel dev -A vercel.dev.json"
   },
   "dependencies": {
-    "vue-router": "4"
+    "access-log": "^0.4.1"
+  },
+  "devDependencies": {
+    "nuxt-edge": "latest"
   }
 }

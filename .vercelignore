@@ -1,4 +1,4 @@
 .nuxt
 node_modules
-.idea
-.vercel
+*.log
+README.md

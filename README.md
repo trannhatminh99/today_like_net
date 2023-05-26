@@ -1,48 +1,23 @@
-# Nuxt Example
+# Vercel example
 
-Deploy your [Nuxt](https://nuxt.com) project to Vercel with zero configuration.
+## Development
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/nuxtjs&template=nuxtjs)
+You need to have package `vercel` globally installed:
 
-_Live Example: https://nuxtjs-template.vercel.app_
-
-Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```sh
+yarn global add vercel
 ```
 
-## Development Server
+Make sure to add `yarn run dev` on the _Development command_, on the settings of your project on vercel.com:
 
-Start the development server on http://localhost:3000
+![vercel settings](vercel-settings.png)
 
-```bash
-npm run dev
+Then you can run the following command to have a local development experience
+
+```sh
+vc dev -A vercel.dev.json
 ```
 
-## Production
+## Deployment
 
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+Any lambdas added to `api/` must be added to the `routes` config in the `vercel.json` file.
